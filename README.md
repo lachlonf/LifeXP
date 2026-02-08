@@ -2,6 +2,14 @@
 
 A gamified habit tracker that turns your daily goals into RPG quests. Complete quests, earn XP, level up, and grow your plant.
 
+## Screenshots
+
+<p align="center">
+  <img src="public/screenshots/dashboard.png" alt="Dashboard" width="250" />
+  <img src="public/screenshots/quests.png" alt="Quest Log" width="250" />
+  <img src="public/screenshots/stats.png" alt="Stats" width="250" />
+</p>
+
 ## Features
 
 - **Quest System** — Daily core quests and rotating quests that refresh each day
