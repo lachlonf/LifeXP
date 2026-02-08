@@ -5,9 +5,9 @@ A gamified habit tracker that turns your daily goals into RPG quests. Complete q
 ## Screenshots
 
 <p align="center">
-  <img src="public/screenshots/dashboard.png" alt="Dashboard" width="250" />
-  <img src="public/screenshots/quests.png" alt="Quest Log" width="250" />
-  <img src="public/screenshots/stats.png" alt="Stats" width="250" />
+  <img src="public/screenshots/dashboard.png" alt="Dashboard" width="1000" />
+  <img src="public/screenshots/quests.png" alt="Quest Log" width="1000" />
+  <img src="public/screenshots/stats.png" alt="Stats" width="1000" />
 </p>
 
 ## Features
