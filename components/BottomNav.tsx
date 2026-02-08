@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function BottomNav({ active }: { active: "dashboard" | "goals" }) {
+export default function BottomNav({ active }: { active: "dashboard" | "goals" | "stats" }) {
   const item = (isActive: boolean) =>
     isActive
       ? "text-emerald-300"
@@ -18,6 +18,13 @@ export default function BottomNav({ active }: { active: "dashboard" | "goals" })
       >
         <span className="text-xl">📜</span>
         <span className="text-xs font-semibold">Goals</span>
+      </Link>
+      <Link
+        href="/stats"
+        className={`flex flex-col items-center ${item(active === "stats")}`}
+      >
+        <span className="text-xl">📊</span>
+        <span className="text-xs font-semibold">Stats</span>
       </Link>
     </nav>
   );

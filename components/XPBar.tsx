@@ -1,20 +1,18 @@
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 type Props = { xp: number };
 
 export default function XPBar({ xp }: Props) {
-  const [progressWidth, setProgressWidth] = useState(0);
-
-  useEffect(() => {
-    setProgressWidth((xp % 100) / 100 * 100);
-  }, [xp]);
+  const percent = (xp % 100);
 
   return (
     <div className="w-full max-w-md">
-      <div className="h-3 bg-gray-200 rounded">
-        <div
-          className="h-3 bg-green-500 rounded transition-all"
-          style={{ width: `${progressWidth}%` }}
+      <div className="h-3 bg-gray-200/20 rounded overflow-hidden">
+        <motion.div
+          className="h-3 rounded bg-gradient-to-r from-emerald-500 to-emerald-300 shadow-[0_0_8px_rgba(16,185,129,0.5)]"
+          initial={{ width: 0 }}
+          animate={{ width: `${percent}%` }}
+          transition={{ type: "spring", stiffness: 80, damping: 15 }}
         />
       </div>
     </div>
